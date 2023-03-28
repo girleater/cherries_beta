@@ -59,6 +59,226 @@
   --bs-body-bg: #fff;
 }
 
+body {
+  background-color: #FEF5DF;
+}
+
+.box {
+  width: 300px;
+  height: 400px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("https://cdn.shopify.com/s/files/1/0642/8893/products/Paintball_Jersey_Long_Sleeve_Front_optimized_3ebfce99-c909-4be0-8f8f-77f78f1f6901.jpg?v=1678137237&width=832");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+
+.box1 {
+  width: 300px;
+  height: 400px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("https://cdn.shopify.com/s/files/1/0642/8893/products/Stripe_Boxy_Knit_Sweater_Multi_Front_optimized.jpg?v=1674674182&width=832");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+
+.box2 {
+  width: 300px;
+  height: 400px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("https://cdn.shopify.com/s/files/1/0642/8893/products/Morbid_Angel_x_Brain_Dead_Football_Jersey_Purple_Front_optimized.jpg?v=1673474533&width=832");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+
+.box3 {
+  width: 300px;
+  height: 400px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("https://cdn.shopify.com/s/files/1/0642/8893/products/Lizard_Cowboy_Hoodie_Black_Front_optimized.jpg?v=1667428766&width=832");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  background: rgba(77, 77, 77, 0.9);
+  color: #FEF5DF;
+  opacity: 0;
+  transition: all 0.5s;
+  font-family: "Playfair Display", serif;
+}
+
+.items {
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+
+.head {
+  font-size: 30px;
+  line-height: 40px;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.head hr {
+  display: block;
+  width: 0;
+  border: none;
+  border-bottom: solid 2px #FEF5DF;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  transition: all 0.5s;
+}
+
+.price {
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.price .old {
+  text-decoration: line-through;
+  color: #b3b3b3;
+}
+
+.cart {
+  font-size: 12px;
+  opacity: 0;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.cart i {
+  font-size: 16px;
+}
+
+.smaller {
+  font-size: 24px;
+}
+
+
+.cart span {
+  margin-left: 10px;
+}
+
+.box:hover .overlay {
+  opacity: 1;
+}
+.box:hover .overlay .head {
+  transform: translateY(0px);
+}
+.box:hover .overlay hr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+.box:hover .overlay .price {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.box:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+
+.box1:hover .overlay {
+  opacity: 1;
+}
+.box1:hover .overlay .head {
+  transform: translateY(0px);
+}
+.box1:hover .overlay hr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+.box1:hover .overlay .price {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.box1:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+
+.box2:hover .overlay {
+  opacity: 1;
+}
+.box2:hover .overlay .head {
+  transform: translateY(0px);
+}
+.box2:hover .overlay hr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+.box2:hover .overlay .price {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.box2:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+
+.box3:hover .overlay {
+  opacity: 1;
+}
+.box3:hover .overlay .head {
+  transform: translateY(0px);
+}
+.box3:hover .overlay hr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+.box3:hover .overlay .price {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.box3:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
+}
 
 *,
 *::before,
